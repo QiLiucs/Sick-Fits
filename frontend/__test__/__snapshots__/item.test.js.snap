@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Item/> renders and matches the snapshot 1`] = `
+<ItemStyles__Item>
+  <img
+    alt="A cool Item"
+    src="ddd.jpg"
+  />
+  <Title>
+    <Link
+      href={
+        Object {
+          "pathname": "/item",
+          "query": Object {
+            "id": "123",
+          },
+        }
+      }
+    >
+      <a>
+        A cool Item
+      </a>
+    </Link>
+  </Title>
+  <PriceTag>
+    $20
+  </PriceTag>
+  <p>
+    yeah
+  </p>
+  <div
+    className="buttonList"
+  >
+    <Link
+      href={
+        Object {
+          "pathname": "update",
+          "query": Object {
+            "id": "123",
+          },
+        }
+      }
+    >
+      <a>
+        Edit ✏️
+      </a>
+    </Link>
+    <AddToCart
+      id="123"
+    />
+    <DeleteItem
+      id="123"
+    >
+      Delete The Item
+    </DeleteItem>
+  </div>
+</ItemStyles__Item>
+`;
+
+exports[`<Item/> updated via props 1`] = `
+<CartCount__Dot>
+  20
+</CartCount__Dot>
+`;
+
+exports[`<Item/> updated via props 2`] = `
+<CartCount__Dot>
+  30
+</CartCount__Dot>
+`;
